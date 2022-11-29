@@ -2,9 +2,10 @@
 <script type="text/javascript">
     window.cnblogsConfig = {
         title: { // 网页title
-            onblur: '博客', // 网页失去焦点时，页面显示的文字
-            onblurTime: 500, // 当页面失去焦点，页面title变化的延时时间，单位毫秒
-            focus: '欢迎回来！', // 当页面获取焦点，页面title显示的文字；显示后，延时恢复原title。
+            onblur: '(oﾟvﾟ)ノ回来玩嘛~', // 网页失去焦点时，页面显示的文字
+            onblurTime: 50, // 当页面失去焦点，页面title变化的延时时间，单位毫秒
+            focus: '(*´∇｀*) 欢迎回来！', // 当页面获取焦点，页面title显示的文字；显示后，延时恢复原title。
+            focusTime: 1000,
         },
         info: { // 基础信息
             name: 'DevilK', // 用户名
@@ -65,9 +66,13 @@
             }
         },
         sidebar: { // 列表数据 ['导航名称', '链接', 'icon']
+            //自定义菜单导航，显示在默认导航下方。
             navList: [
                 ['关于我', 'https://www.cnblogs.com/DevilK/articles/16933769.html', 'icon-prompt_fill'],
             ],
+        },
+        articleSuffix: {
+            aboutHtml: "一位爱好编程的懵懂少年~ ( ╯▽╰) ",
         },
     }
 </script>
