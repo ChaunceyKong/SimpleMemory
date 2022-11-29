@@ -1,0 +1,75 @@
+<!-- 自定制脚本 -->
+<script type="text/javascript">
+    window.cnblogsConfig = {
+        title: { // 网页title
+            onblur: '博客', // 网页失去焦点时，页面显示的文字
+            onblurTime: 500, // 当页面失去焦点，页面title变化的延时时间，单位毫秒
+            focus: '欢迎回来！', // 当页面获取焦点，页面title显示的文字；显示后，延时恢复原title。
+        },
+        info: { // 基础信息
+            name: 'DevilK', // 用户名
+            startDate: '2022-03-07', // 入园时间，年-月-日。入园时间查看方法：鼠标停留园龄时间上，会显示入园时间
+            avatar: 'https://pic.imgdb.cn/item/6385e51716f2c2beb1a72941.png', // 用户头像
+            //avatar: '此地址可换成博客园上传文件的地址', // 用户头像
+            blogIcon: 'https://images.cnblogs.com/cnblogs_com/blogs/737239/galleries/2115043/o_220226052431_hacker.png', // 网站图标
+        },
+        banner: { // 横幅
+            home: {
+                titleSource: 'Devil',
+                background: ["https://cdn.jsdelivr.net/gh/ChaunceyKong/PicGo_img@main/img/202211292004696.jpg",
+                    "https://cdn.jsdelivr.net/gh/ChaunceyKong/PicGo_img@main/img/202211292005023.jpg",
+                    "https://cdn.jsdelivr.net/gh/ChaunceyKong/PicGo_img@main/img/202211292005389.jpg",
+                    "https://cdn.jsdelivr.net/gh/ChaunceyKong/PicGo_img@main/img/202211292006290.jpg",
+                    "https://cdn.jsdelivr.net/gh/ChaunceyKong/PicGo_img@main/img/202211292006279.jpg",
+                    "https://cdn.jsdelivr.net/gh/ChaunceyKong/PicGo_img@main/img/202211292007664.jpg"
+                ],
+            },
+            article: {
+                background: [ //图片地址
+                    "https://cdn.jsdelivr.net/gh/ChaunceyKong/PicGo_img@main/img/202211292031806.jpg",
+                    "https://cdn.jsdelivr.net/gh/ChaunceyKong/PicGo_img@main/img/202211292031336.jpg",
+                    "https://cdn.jsdelivr.net/gh/ChaunceyKong/PicGo_img@main/img/202211292032254.jpg",
+                ],
+            },
+        },
+        footer: { // 页脚
+            style: 2,
+        },
+        rtMenu: { // 二维码
+            qrCode: 'https://pic.imgdb.cn/item/6385e5c016f2c2beb1a7d21f.jpg',
+        },
+        animate: { // 动效
+            homeBanner: { // 主页动效
+                enable: false,
+                options: {
+                    radius: 15,
+                    density: 0.05, // 密度
+                    color: 'rgba(255,255,255, .2)', // 颜色设置，“random” 为随机颜色
+                    clearOffset: 0.3,
+                }
+            },
+            articleBanner: { //文章页动效
+                // enable: false,
+                enable: true,
+            },
+            background: { // 背景动效（动态彩带）
+                enable: false,
+            },
+        },
+        code: { //代码
+            type: 'hljs',
+            options: { //渲染设置
+                theme: 'atelier-dune-dark',
+                line: true, // 行号
+                macStyle: false, //mac风格代码框样式
+            }
+        },
+        sidebar: { // 列表数据 ['导航名称', '链接', 'icon']
+            navList: [
+                ['关于我', 'https://www.cnblogs.com/DevilK/articles/16933769.html', 'icon-prompt_fill'],
+            ],
+        },
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/gh/BNDong/Cnblogs-Theme-SimpleMemory@v2.0.6/dist/simpleMemory.js" defer></script>
+

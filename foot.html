@@ -1,0 +1,89 @@
+
+<!-- 樱花特效 -->
+<script src="https://files.cnblogs.com/files/blogs/733703/sakuraPlus.js?t=1649635181" ></script>
+<!-- 雪花特效 -->
+<!-- <div class="Snow">
+    <canvas id="Snow"></canvas>
+</div>
+<script src="https://blog-static.cnblogs.com/files/zouwangblog/xue.js"></script> -->
+<!-- 点击流星 -->
+<script type="text/javascript" src="https://files.cnblogs.com/files/blogs/733703/cursor-effects.js?t=1648620754"></script>
+<script type="text/javascript">
+    /* 鼠标特效 */
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+        $("body").click(function(e) {
+            // var a = new Array("❤富强❤","❤民主❤","❤文明❤","❤和谐❤","❤自由❤","❤平等❤","❤公正❤","❤法治❤","❤爱国❤","❤敬业❤","❤诚信❤","❤友善❤");
+            var a = new Array("❤感谢观看❤","❤","❤喜欢就点个赞呗❤","❤❤","❤快去点赞❤","❤❤❤","❤不是点这里哦❤","❤❤","❤点赞在底部啦❤","❤","❤❤");
+            var $i = $("<span></span>").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+                y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+            });
+            $("body").append($i);
+            $i.animate({
+                    "top": y - 180,
+                    "opacity": 0
+                },
+                1500,
+                function() {
+                    $i.remove();
+                });
+        });
+    });
+</script>
+
+<!-- 评论区打字烟花 -->
+<script src="https://files.cnblogs.com/files/blogs/733703/activate-power-mode.js?t=1649645650"></script>
+<script>
+    POWERMODE.colorful = true; // make power mode colorful  <!-- ture 为启用礼花特效-->
+    POWERMODE.shake = false; // turn off shake  <!-- false 为禁用震动特效-->
+    document.body.addEventListener('input', POWERMODE);
+</script>
+<!-- Music-->
+<link rel="stylesheet" href="https://files.cnblogs.com/files/blogs/733703/APlayer.min.css?t=1649924227">
+<script src="https://blog-static.cnblogs.com/files/sushiyv/APlayer.min.js"></script>
+<script src="https://blog-static.cnblogs.com/files/sushiyv/Meting.min.js"></script>
+<div id="player" class="aplayer aplayer-withlist aplayer-fixed" data-id="3778678" data-server="netease" data-type="playlist" data-order="random" data-fixed="true" data-listfolded="true" data-theme="orange"></div>
+<!--data-id='xxxxx'是网易云网页官网下热歌榜的id ，id在网页url栏也就是网站地址里面的id -->
+<!-- Music end -->
+<!--放大图片-->
+<link rel="stylesheet" type="text/css" href="https://blog-static.cnblogs.com/files/zouwangblog/zoom.css">
+<script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.2.0/js/transition.js"></script>
+<script src="https://blog-static.cnblogs.com/files/zouwangblog/zoom.js"></script>
+<script type='text/javascript'>$('#cnblogs_post_body img').attr('data-action', 'zoom');</script>
+<!--放大图片end-->
+
+<!--owo表情-->
+<script src="https://blog-static.cnblogs.com/files/gshang/gshang.owo.2020.01.05.1.js"></script>
+<link rel="stylesheet" href="https://blog-static.cnblogs.com/files/elkyo/OwO.min.css" />
+
+<!-- import Vue.js -->
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<!-- 背景动画 -->
+<canvas id="c_n9" width="1920" height="990" style="position: fixed; top: 0px; left: 0px; z-index: -1;
+ opacity: 0.2;"></canvas>
+<script src="https://live2d-widget-right.oss-cn-hangzhou.aliyuncs.com/canvas-nest.min.js"></script>
+<!-- <script src="https://files.cnblogs.com/files/blogs/733703/canvas-nest.min.js?t=1648888031"></script> -->
+<!-- 标签云相关库 -->
+
+<script src="https://files.cnblogs.com/files/blogs/733703/jquery.engine3D.js?t=1648522323" type="text/javascript" charset="utf-8"></script>
+<script src="https://files.cnblogs.com/files/blogs/733703/jquery.particlePhysics.min.js?t=1648522203" type="text/javascript" charset="utf-8"></script>
+<!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+<script type="text/javascript" src="https://files.cnblogs.com/files/blogs/733703/jquery.min.js?t=1650856285"></script>
+
+<!--顶部加载条-->
+<link rel="stylesheet" href="https://blog-static.cnblogs.com/files/zouwangblog/nprogress.css">
+<script src="https://blog-static.cnblogs.com/files/zouwangblog/nprogress.js"></script>
+<script>
+    NProgress.start();
+    NProgress.done();
+</script>
